@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetCare Genius</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#chat-section">Ask Genius</a></li>
+      <li><a href="#reminder">Planner</a></li>
+      <li><a href="#profile">Pet Profile</a></li>
+    </ul>
+  </nav>
+
+  <header id="home">
+    <h1>🐾 PetCare Genius</h1>
+    <p>Your ultimate guide to keeping your pets happy and healthy. 🐕🐾</p>
+  </header>
+
+  <main>
+    <!-- ChatGPT Section -->
+    <section id="chat-section">
+      <h2>Ask PetCare Genius 🐾</h2>
+      <div id="chat-container">
+        <div id="messages"></div>
+        <div id="chat-input">
+          <input type="text" id="user-input" placeholder="Type your question here..." />
+          <button id="ask-btn">Ask</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Daily Reminder -->
+    <section id="reminder">
+      <h2>Daily Reminder & Planner 📅</h2>
+      <div id="reminder-container">
+        <input type="time" id="alarm-time" />
+        <button id="set-alarm">Set Reminder</button>
+        <p id="alarm-message">No reminder set yet!</p>
+      </div>
+    </section>
+
+    <!-- Pet Profile Section -->
+    <section id="profile">
+      <h2>Your Pet’s Profile 🐶🐱</h2>
+      <div id="profile-container">
+        <input type="text" id="pet-name" placeholder="Pet's Name" />
+        <input type="text" id="pet-breed" placeholder="Breed" />
+        <input type="number" id="pet-age" placeholder="Age (years)" />
+        <button id="save-profile">Save Profile</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>🐾 Built with ❤️ by your best pet buddy!</p>
+    <div id="social-links">
+      <a href="#">Facebook</a> | 
+      <a href="#">Instagram</a> | 
+      <a href="#">Twitter</a>
+    </div>
+    <form id="newsletter">
+      <label for="email">Subscribe for Pet Tips:</label>
+      <input type="email" id="email" placeholder="Enter your email" />
+      <button type="submit">Subscribe</button>
+    </form>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
